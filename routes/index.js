@@ -1,6 +1,8 @@
 var express = require("express");
 var router = express.Router();
 const pool = require("../config/config");
+var adminRouter = require("./controller/admin");
+// import adminRouter from "./controller/admin";
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
@@ -20,21 +22,6 @@ router.get("/users", (request, response) => {
   });
 });
 
-router.post("/addAdmin", (request, response) => {
-  pool.query(
-    `insert into admin_login values ('${request.body.name}','${
-      request.body.password
-    }','${request.body.role}')`,
-    (error, result) => {
-      if (error) throw error;
-
-      if (result.affectedRows > 0) {
-        response.send("Data inserted successfully");
-      } else {
-        response.send("Something went wrong... Try again");
-      }
-    }
-  );
-});
+router.use("/admin", adminRouter);
 
 module.exports = router;
