@@ -2,6 +2,7 @@ var express = require("express");
 var router = express.Router();
 const pool = require("../config/config");
 var adminRouter = require("./controller/admin");
+var schoolRouter = require("./controller/school");
 // import adminRouter from "./controller/admin";
 
 /* GET home page. */
@@ -23,5 +24,6 @@ router.get("/users", (request, response) => {
 });
 
 router.use("/admin", adminRouter);
+router.use("/school", schoolRouter);
 
 module.exports = router;
