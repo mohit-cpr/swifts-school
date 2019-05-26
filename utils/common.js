@@ -1,3 +1,4 @@
+const pool = require("../config/config");
 function jsonInsertQuery(table, json) {
   let query = `INSERT INTO ${table} (`;
 
@@ -12,8 +13,15 @@ function jsonInsertQuery(table, json) {
   return query;
 }
 
-function createTablesForSchoolApproval(school_id) {
-  let tableList = ["calendar", "class"];
+function executeQuery(query) {
+  console.log("query", query);
+  return new Promise((resolve, reject) => {
+    pool.query(query, (error, result) => {
+      if (error) return reject(error);
+      console.log(result);
+      resolve(result);
+    });
+  });
 }
 
-module.exports = jsonInsertQuery;
+module.exports = { jsonInsertQuery, executeQuery };
