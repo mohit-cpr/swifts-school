@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www",
+    "start": "node ./bin/www",
     "git-status": "git status",
     "git-add": "curl http://localhost:5000/git-add?files=$FILES",
     "git-commit": "curl http://localhost:5000/git-commit?message=$MSG",
