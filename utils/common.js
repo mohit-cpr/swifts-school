@@ -94,7 +94,7 @@ function gitAdd(files) {
 
 function gitCommit(message) {
   return new Promise((resolve, reject) => {
-    cmd.get(`git add ${message}`, function(err, data, stderr) {
+    cmd.get(`git commit -m ${message}`, function(err, data, stderr) {
       if (err) {
         resolve(err);
       } else {
