@@ -1,10 +1,10 @@
 const mysql = require("mysql");
 
 const config = {
-  host: "localhost",
-  user: "root",
-  password: "password",
-  database: "school"
+  host: "148.66.138.139",
+  user: "swiftschool",
+  password: "swiftschool",
+  database: "swiftschool"
 };
 
 const pool = mysql.createPool(config);

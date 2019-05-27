@@ -14,30 +14,14 @@ function jsonInsertQuery(table, json) {
 }
 
 function executeQuery(query) {
+  console.log("query", query);
   return new Promise((resolve, reject) => {
     pool.query(query, (error, result) => {
-      if (error)
-        switch (error.errno) {
-          case 1062:
-            resolve(error);
-            break;
-          default:
-            return reject(error);
-        }
-
+      if (error) return reject(error);
       console.log(result);
       resolve(result);
     });
   });
 }
 
-function createRandomPassword() {
-  let result = "";
-  let characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-  let charactersLength = 8;
-  for (let i = 0; i < charactersLength; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersLength));
-  }
-  return result;
-}
-module.exports = { jsonInsertQuery, executeQuery, createRandomPassword };
+module.exports = { jsonInsertQuery, executeQuery };
