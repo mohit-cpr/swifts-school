@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "git-status": "git status",
     "git-add": "git add $FILES",
-    "git-commit": "curl http://localhost:5000/export && git commit -m $MSG",
+    "git-commit": "curl http://localhost:5000/export && git add school.sql && git commit -m $MSG",
     "git-push": "curl http://localhost:5000/git-push?origin=$ORIGIN"
   },
   "dependencies": {
