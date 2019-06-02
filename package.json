@@ -5,8 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "git-status": "git status",
-    "git-add": "curl http://localhost:5000/git-add?files=$FILES",
-    "git-commit": "curl http://localhost:5000/git-commit?message=$MSG",
+    "git-add": "git add $FILES",
+    "git-commit": "curl http://localhost:5000/export && git commit -m $MSG",
     "git-push": "curl http://localhost:5000/git-push?origin=$ORIGIN"
   },
   "dependencies": {

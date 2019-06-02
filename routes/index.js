@@ -13,6 +13,7 @@ router.get("/", function(req, res, next) {
 
 router.get("/export", function(req, res, next) {
   exportSql();
+  res.send("export successfull");
 });
 
 router.get("/run-script", function(req, res, next) {
