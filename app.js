@@ -6,8 +6,60 @@ var logger = require("morgan");
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
+const { createDBCon } = require("./config/config");
+var fs = require("fs");
 
 var app = express();
+
+createDBCon.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+  createDBCon.query("CREATE DATABASE IF NOT EXISTS swiftsschool", function(
+    err,
+    result
+  ) {
+    if (err) throw err;
+    console.log(result);
+    if (result.warningCount === 0) {
+      setCurrentDB(function(data) {
+        let queries = fs
+          .readFileSync(path.join(__dirname, "school.sql"), {
+            encoding: "UTF-8"
+          })
+          .split(";\n");
+        for (let query of queries) {
+          query = query.trim();
+          if (query.length !== 0 && !query.match(/\/\*/)) {
+            createDBCon.query(query, function(err, sets, fields) {
+              if (err) {
+                console.log(
+                  `Importing failed for Mysql Database  - Query:${query}`
+                );
+              } else {
+                console.log(`Importing Mysql Database  - Query:${query}`);
+              }
+            });
+          }
+        }
+      });
+    }
+  });
+});
+function setCurrentDB(callback) {
+  createDBCon.query(`USE swiftsschool`, function(err, rows) {
+    if (err) {
+      if (err.errno == 1049) {
+        console.log(`${err.sqlMessage} : Failed to connect MySql database`);
+        return callback("refused");
+      } else {
+        console.log(`Mysql Database connection error`);
+        return callback("refused");
+      }
+    } else {
+      return callback("connected");
+    }
+  });
+}
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));

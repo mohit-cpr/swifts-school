@@ -1,7 +1,11 @@
 var express = require("express");
 var router = express.Router();
 const pool = require("../../config/config");
-var { jsonInsertQuery, executeQuery } = require("../../utils/common");
+var {
+  jsonInsertQuery,
+  executeQuery,
+  createRandomPassword
+} = require("../../utils/common");
 // var executeQuery = require("../../utils/common");
 
 router
@@ -67,71 +71,90 @@ router
       response.send("Something went wrong... Try again");
     }
   })
-  .get((request, response) => {
-    pool.query(
-      `select * from school_details inner join school_credential on school_credential.school_id=school_details.school_id`,
-      (error, result) => {
-        if (error) throw error;
-
-        if (result.length > 0) {
-          response.statusCode = 200;
-          response.json({
-            success: 1,
-            data: result
-          });
-        } else {
-          response.statusCode = 404;
-          response.send("School not found");
-        }
-      }
+  .get(async (request, response) => {
+    let result = await executeQuery(
+      `select * from school_details inner join school_credential on school_credential.school_id=school_details.school_id`
     );
+    if (result.length > 0) {
+      response.statusCode = 200;
+      response.json({
+        success: 1,
+        data: result
+      });
+    } else {
+      response.statusCode = 404;
+      response.send("School not found");
+    }
   });
 
-router.route("/change-status/:schoolId/:op*?").put((request, response) => {
-  pool.query(
-    `update school_details set status='${
-      request.body.status
-    }' where school_id=${request.params.schoolId}`,
-    (error, result) => {
-      if (error) throw error;
-      if (result.affectedRows > 0) {
-        response.statusCode = 200;
+router
+  .route("/change-status/:schoolId/:op*?")
+  .put(async (request, response) => {
+    let result = await executeQuery(
+      `update school_details inner join school_credential on school_details.school_id=school_credential.school_id set school_details.status='${
+        request.body.status
+      }', school_credential.approval_date_time='${new Date().getTime()}', login_password='${createRandomPassword()}' where school_credential.school_id=${
+        request.params.schoolId
+      }`
+    );
+    if (result.changedRows === 1) {
+      response.status = 400;
+      response.json({
+        success: 1,
+        data: `This school is already approved`
+      });
+      return;
+    }
+    if (result.affectedRows > 0) {
+      response.statusCode = 200;
+      response.json({
+        success: 1,
+        data: `Status of school has been changes to ${request.body.status}`
+      });
+      if (request.body.status === "APPROVED") {
+        let createHomeWork = await executeQuery(`CREATE TABLE ${
+          request.params.schoolId
+        }_home_work (
+          home_work_id int(11) NOT NULL,
+          home_work_date date NOT NULL,
+          subject_id int(11) NOT NULL,
+          home_work_flag boolean NULL,
+          home_work_details text NULL,
+          PRIMARY KEY (home_work_id),
+          KEY home_work_fk0 (subject_id)
+        )`);
+      }
+    } else {
+      response.statusCode = 400;
+      if (result.message.split(":")[1].split(" ")[1] === "0") {
         response.json({
           success: 1,
-          data: `Status of school has been changes to ${request.body.status}`
-        });
-        if (request.body.status === "APPROVED") {
-          pool.query(
-            `CREATE TABLE ${request.params.schoolId}_home_work (
-            home_work_id int(11) NOT NULL,
-            home_work_date date NOT NULL,
-            subject_id int(11) NOT NULL,
-            home_work_flag boolean NULL,
-            home_work_details text NULL,
-            PRIMARY KEY (home_work_id),
-            KEY home_work_fk0 (subject_id)
-          )`,
-            (error, result) => {
-              if (error) throw error;
-              console.log(result);
-            }
-          );
-        }
-      } else {
-        response.statusCode = 400;
-        if (result.message.split(":")[1].split(" ")[1] === "0") {
-          response.json({
-            success: 1,
-            data: "School Id not found"
-          });
-        }
-        response.json({
-          success: 1,
-          data: "Something went wrong"
+          data: "School Id not found"
         });
       }
+      response.json({
+        success: 1,
+        data: "Something went wrong"
+      });
     }
+  });
+
+router.route("/class/:school_id").put(async (req, res) => {
+  let result = await executeQuery(
+    `update school_details set classes='${req.body.classes}' where school_id=${
+      req.params.school_id
+    }`
   );
+  if (result.affectedRows > 0) {
+    res.statusCode = 200;
+    res.json({
+      success: 1,
+      message: "Classes updated successfully"
+    });
+  } else {
+    res.statusCode = 404;
+    res.send("School id not found");
+  }
 });
 router
   .route("/class/:school_id")

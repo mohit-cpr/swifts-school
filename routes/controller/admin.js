@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router();
-const pool = require("../../config/config");
+const { pool } = require("../../config/config");
 
 router.post("/addAdmin", (request, response) => {
   pool.query(

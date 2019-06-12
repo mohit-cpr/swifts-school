@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "git-status": "git status",
+    "git-add": "git add $FILES",
+    "git-commit": "curl http://localhost:5000/export && git add school.sql && git commit -m $MSG",
+    "git-push": "curl http://localhost:5000/git-push?origin=$ORIGIN"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -14,6 +18,8 @@
     "minimist": "^1.2.0",
     "morgan": "~1.9.1",
     "mysql": "^2.17.1",
+    "mysqldump": "^3.0.0",
+    "node-cmd": "^3.0.0",
     "pug": "2.0.0-beta11"
   },
   "repository": {
