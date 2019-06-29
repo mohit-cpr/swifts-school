@@ -3,6 +3,7 @@ var router = express.Router();
 const pool = require("../config/config");
 var adminRouter = require("./controller/admin");
 var schoolRouter = require("./controller/school");
+var testRouter = require("./controller/test");
 var { exportSql, shellScript, gitAdd, gitPush } = require("../utils/common");
 // import adminRouter from "./controller/admin";
 
@@ -46,5 +47,6 @@ router.get("/users", (request, response) => {
 
 router.use("/admin", adminRouter);
 router.use("/school", schoolRouter);
+router.use("/test", testRouter);
 
 module.exports = router;

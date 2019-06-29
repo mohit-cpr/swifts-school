@@ -7,10 +7,10 @@ const createDBCon = mysql.createConnection({
 });
 
 const config = {
-  host: "148.66.138.139",
-  user: "swiftschool",
-  password: "swiftschool",
-  database: "swiftschool"
+  host: "localhost",
+  user: "root",
+  password: "password",
+  database: "swiftsschool"
 };
 
 const exportConfig = {

@@ -20,29 +20,27 @@ createDBCon.connect(function(err) {
   ) {
     if (err) throw err;
     console.log(result);
-    if (result.warningCount === 0) {
-      setCurrentDB(function(data) {
-        let queries = fs
-          .readFileSync(path.join(__dirname, "school.sql"), {
-            encoding: "UTF-8"
-          })
-          .split(";\n");
-        for (let query of queries) {
-          query = query.trim();
-          if (query.length !== 0 && !query.match(/\/\*/)) {
-            createDBCon.query(query, function(err, sets, fields) {
-              if (err) {
-                console.log(
-                  `Importing failed for Mysql Database  - Query:${query}`
-                );
-              } else {
-                console.log(`Importing Mysql Database  - Query:${query}`);
-              }
-            });
-          }
+    setCurrentDB(function(data) {
+      let queries = fs
+        .readFileSync(path.join(__dirname, "school.sql"), {
+          encoding: "UTF-8"
+        })
+        .split(";\n");
+      for (let query of queries) {
+        query = query.trim();
+        if (query.length !== 0 && !query.match(/\/\*/)) {
+          createDBCon.query(query, function(err, sets, fields) {
+            if (err) {
+              console.log(
+                `Importing failed for Mysql Database  - Query:${query}`
+              );
+            } else {
+              console.log(`Importing Mysql Database  - Query:${query}`);
+            }
+          });
         }
-      });
-    }
+      }
+    });
   });
 });
 function setCurrentDB(callback) {

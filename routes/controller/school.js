@@ -112,16 +112,50 @@ router
         data: `Status of school has been changes to ${request.body.status}`
       });
       if (request.body.status === "APPROVED") {
-        let createHomeWork = await executeQuery(`CREATE TABLE ${
+        let createHomeWork = await executeQuery(`CREATE TABLE IF NOT EXISTS ${
           request.params.schoolId
         }_home_work (
-          home_work_id int(11) NOT NULL,
+          home_work_id int(11) NOT NULL auto_increment,
           home_work_date date NOT NULL,
           subject_id int(11) NOT NULL,
           home_work_flag boolean NULL,
           home_work_details text NULL,
           PRIMARY KEY (home_work_id),
           KEY home_work_fk0 (subject_id)
+        )`);
+
+        let createStudents = await executeQuery(`
+        CREATE TABLE IF NOT EXISTS ${request.params.schoolId}_students (
+          student_auto_id int(11) NOT NULL auto_increment,
+          student_id int(11) NOT NULL,
+          student_roll_no varchar(64) NOT NULL,
+          student_name varchar(64) NOT NULL,
+          student_fathers_name varchar(64) NOT NULL,
+          student_mothers_name varchar(64) NOT NULL,
+          student_fathers_email varchar(128) NOT NULL,
+          student_fathers_phone varchar(16) NOT NULL,
+          student_address varchar(128) NOT NULL,
+          student_city_id int(11) NOT NULL,
+          student_state_id int(11) NOT NULL,
+          student_country_id int(11) NOT NULL,
+          student_zip varchar(8) NOT NULL,
+          student_photo text NOT NULL,
+          student_gender varchar(8) NOT NULL,
+          class_id int(11) NOT NULL,
+          PRIMARY KEY (student_auto_id)
+        )`);
+
+        let createParents = await executeQuery(`
+        CREATE TABLE IF NOT EXISTS ${
+          request.params.schoolId
+        }_parents_credential (
+          parent_id int(11) NOT NULL AUTO_INCREMENT,
+          student_auto_id int(11) NOT NULL,
+          parent_phone varchar(16) NOT NULL,
+          parent_password varchar(128) NOT NULL,
+          parent_last_login_date_time date NOT NULL,
+          parent_session_key varchar(128) NOT NULL,
+          PRIMARY KEY (parent_id)
         )`);
       }
     } else {
