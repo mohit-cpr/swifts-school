@@ -4,6 +4,8 @@ const pool = require("../config/config");
 var adminRouter = require("./controller/admin");
 var schoolRouter = require("./controller/school");
 var testRouter = require("./controller/test");
+var classRouter = require("./controller/class");
+var teacherRouter = require("./controller/teacher");
 var { exportSql, shellScript, gitAdd, gitPush } = require("../utils/common");
 // import adminRouter from "./controller/admin";
 
@@ -48,5 +50,7 @@ router.get("/users", (request, response) => {
 router.use("/admin", adminRouter);
 router.use("/school", schoolRouter);
 router.use("/test", testRouter);
+router.use("/class", classRouter);
+router.use("/teacher", teacherRouter);
 
 module.exports = router;
