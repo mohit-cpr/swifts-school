@@ -18,7 +18,7 @@ const exportConfig = {
   user: "root",
   password: "password",
   database: "swiftsschool",
-  dest: "./test.sql"
+  dest: "./school.sql"
 };
 
 const pool = mysql.createPool(config);

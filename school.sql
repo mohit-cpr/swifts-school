@@ -594,6 +594,622 @@ INSERT INTO
   `admin_login` (`username`, `password`, `role`)
 VALUES
   ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
+INSERT INTO
+  `admin_login` (`username`, `password`, `role`)
+VALUES
+  ('abcd', 'abcd@123', 'user');
 
 # ------------------------------------------------------------
 # DATA DUMP FOR TABLE: approval_status
