@@ -6,7 +6,8 @@
     "start": "nodemon ./bin/www",
     "git-status": "git status",
     "git-add": "git add $FILES",
-    "git-commit": "curl http://localhost:3000/export && git add school.sql && git commit -m $MSG",
+    "git-add-db": "curl http://localhost:3000/export && git add school.sql",
+    "git-commit": "git commit -m $MSG",
     "git-push": "git push origin $ORIGIN"
   },
   "dependencies": {
